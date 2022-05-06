@@ -1,0 +1,22 @@
+.login{
+    align-content: center;
+    height: fit-content;
+    width: fit-content;
+    border: 2px solid rgb(168, 164, 164);
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 10px 10px 5px #283939;
+}
+
+
+.box{
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    margin:2em;   
+}
+
+mat-form-field {
+    width: 100%;
+    text-align: center;
+}

@@ -1,0 +1,30 @@
+
+<body>
+    <div class="login">
+        <div class="box">
+            <div>
+                <mat-form-field color="primary" appearance="fill" >
+                    <mat-label>Email</mat-label>
+                    <input matInput id="LogInForm_email" placeholder="example@domain.com">
+                </mat-form-field>    
+                </div>
+                <div>
+                <mat-form-field color="primary" appearance="fill" >
+                    <mat-label>Password</mat-label>
+                    <input matInput [type]="hide ? 'password' : 'text'" id="LogInForm_password" placeholder="*Password*">
+                    <button color="primary" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                </mat-form-field>
+            </div>
+            <div>
+                <button mat-flat-button (click)="sendLogInInfo()">Log In</button>
+            </div>
+            <br>
+            <div>
+                <button mat-flat-button (click)="goTo('register')">Don't have an account?</button>
+            </div>
+        </div>
+
+    </div>
+</body>

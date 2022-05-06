@@ -1,0 +1,53 @@
+
+<body>
+    <div class="register">
+        <div class="box">
+            <div>
+                <mat-form-field color="primary" appearance="fill" >
+                    <mat-label>First Name</mat-label>
+                    <input matInput id="RegisterForm_FirstName" placeholder="John" [formControl]="firstName" required>
+                </mat-form-field>
+                <mat-form-field color="primary" appearance="fill" >
+                    <mat-label>Middle Name</mat-label>
+                    <input matInput id="RegisterForm_email" placeholder="&quot;Unknown&quot;" [formControl]="middleName">
+                </mat-form-field>
+                <mat-form-field color="primary" appearance="fill" >
+                    <mat-label>Last Name</mat-label>
+                    <input matInput id="RegisterForm_email" placeholder="Doe" [formControl]="lastName" required>
+                </mat-form-field>    
+            </div>
+            <div>
+                <mat-form-field color="primary" appearance="fill" >
+                    <mat-label>Email</mat-label>
+                    <input matInput id="RegisterForm_email" placeholder="example@domain.com" [formControl]="email" required>
+                </mat-form-field>    
+            </div>
+            <div>
+                <span>
+                <mat-form-field color="primary" appearance="fill" >
+                    <mat-label>Type Password</mat-label>
+                    <input matInput [type]="hide ? 'password' : 'text'" id="RegisterForm_password" placeholder="*Password*" [formControl]="password" required>
+                    <button color="primary" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                </mat-form-field>
+                <mat-form-field color="primary" appearance="fill" >
+                    <mat-label>Retype Password</mat-label>
+                    <input matInput [type]="hide ? 'password' : 'text'" id="RegisterForm_password" placeholder="*Password*" [formControl]="passwordRe" required>
+                    <button color="primary" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                </mat-form-field>
+            </span>
+            </div>
+            <div>
+                <button mat-flat-button (click)="sendRegisterInfo()">Register</button>
+            </div>
+            <br>
+            <div>
+                <button mat-flat-button (click)="goTo('login')">Already have an account?</button>
+            </div>
+        </div>
+
+    </div>
+</body>
