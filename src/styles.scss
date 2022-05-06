@@ -36,16 +36,19 @@ $DistributedLibrary-theme: mat.define-light-theme((
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body {
+// body {
+//   margin: 0;
+//   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+//   background: 
+//       linear-gradient(
+//           to left,
+//           rgba(#616060,0.9),
+//           rgba(#fffdfdc7,0.3)
+//       ),
+//       url("/assets/project-1.jpg" ) center top;
+//       background-repeat: no-repeat;
+//       background-attachment: fixed;
+// }
+body{
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: 
-      linear-gradient(
-          to left,
-          rgba(#616060,0.9),
-          rgba(#fffdfdc7,0.3)
-      ),
-      url("/assets/project-1.jpg" ) center top;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
 }
